@@ -1,4 +1,3 @@
-
 ---
 import '../styles/theme.css';
 ---
@@ -199,7 +198,7 @@ import '../styles/theme.css';
 			<div class="accent-line"></div>
 			<h2>Contact</h2>
 					<div style="display:flex;gap:1.5rem;align-items:center;margin-bottom:1.5rem;">
-						<a href="mailto:mr.kaungsettlwin155@gmai;.com" aria-label="Email" style="font-size:1.7rem;color:var(--color-accent);"><svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="22,6 12,13 2,6"/></svg></a>
+						<a href="mailto:mr.kaungsettlwin155@gmail.com" aria-label="Email" style="font-size:1.7rem;color:var(--color-accent);"><svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="22,6 12,13 2,6"/></svg></a>
 						<a href="https://www.linkedin.com/in/kaung-sett-lwin-661376274" target="_blank" rel="noopener" aria-label="LinkedIn" style="font-size:1.7rem;color:var(--color-accent);"><svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="2.18"/><line x1="16" y1="8" x2="16" y2="16"/><line x1="12" y1="12" x2="12" y2="16"/><line x1="8" y1="8" x2="8" y2="16"/></svg></a>
 						<a href="https://github.com/kaungSethLwin" target="_blank" rel="noopener" aria-label="GitHub" style="font-size:1.7rem;color:var(--color-accent);"><svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2C6.48 2 2 6.48 2 12c0 4.42 2.87 8.17 6.84 9.49.5.09.66-.22.66-.48 0-.24-.01-.87-.01-1.7-2.78.6-3.37-1.34-3.37-1.34-.45-1.15-1.1-1.46-1.1-1.46-.9-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.89 1.52 2.34 1.08 2.91.83.09-.65.35-1.08.63-1.33-2.22-.25-4.56-1.11-4.56-4.95 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02A9.56 9.56 0 0 1 12 6.8c.85.004 1.71.12 2.51.35 1.91-1.29 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.85-2.34 4.7-4.57 4.95.36.31.68.92.68 1.85 0 1.33-.01 2.4-.01 2.73 0 .27.16.58.67.48A10.01 10.01 0 0 0 22 12c0-5.52-4.48-10-10-10z"/></svg></a>
 					</div>
@@ -210,32 +209,37 @@ import '../styles/theme.css';
 				   <button type="submit" class="btn">Send Message</button>
 				   <span id="form-status" style="margin-top:0.5rem;font-size:1rem;"></span>
 			   </form>
-				 <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
-				 <script>
-					 (function() {
-						 emailjs.init('YOUR_EMAILJS_USER_ID'); 
-						 const form = document.getElementById('contact-form');
-						 const status = document.getElementById('form-status');
-						 form.addEventListener('submit', function(e) {
-							 e.preventDefault();
-							 status.textContent = 'Sending...';
-							 emailjs.sendForm('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', this)
-								 .then(function() {
-									 status.textContent = 'Message sent successfully!';
-									 form.reset();
-								 }, function(error) {
-									 status.textContent = 'Failed to send. Please try again.';
-								 });
-						 });
-					 })();
-				 </script>
-				 <!--
-					 EmailJS Setup Instructions:
-					 1. Go to https://www.emailjs.com/ and sign up for a free account.
-					 2. Add an email service (e.g., Gmail) and create an email template with variables: user_name, user_email, message.
-					 3. Replace 'YOUR_EMAILJS_USER_ID', 'YOUR_SERVICE_ID', and 'YOUR_TEMPLATE_ID' above with your actual EmailJS values.
-					 4. Now your contact form will send messages directly to mr.kaungsettlwin155@gmail.com.
-				 -->
+								 <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+								 <script>
+									 // Wait for the EmailJS script to load before using it
+									 window.addEventListener('load', function() {
+										 // @ts-ignore
+										 if (typeof window.emailjs !== 'undefined') {
+											 // @ts-ignore
+											 window.emailjs.init('c-Pac2HNUjp2UL27U');
+											 const form = document.getElementById('contact-form');
+											 const status = document.getElementById('form-status');
+											 if (form && status) {
+												 form.addEventListener('submit', function(e) {
+													 e.preventDefault();
+													 status.textContent = 'Sending...';
+													 // @ts-ignore
+													 window.emailjs.sendForm('service_q3oo36d', 'template_rhc4df7', form)
+														 .then(function(response: any) {
+															   status.textContent = 'Message sent successfully!';
+															   (form as HTMLFormElement).reset();
+														 }, function(error: any) {
+															   status.textContent = 'Failed to send. Please try again.';
+														 });
+												 });
+											 }
+										 } else {
+											 const status = document.getElementById('form-status');
+											 if (status) status.textContent = 'EmailJS failed to load.';
+										 }
+									 });
+								 </script>
+				 
 				 </section>
 
 		<script>
@@ -243,24 +247,33 @@ import '../styles/theme.css';
 		(function() {
 			const btn = document.getElementById('theme-toggle');
 			const html = document.documentElement;
-			function setTheme(theme) {
+			
+			function setTheme(theme:string) {
 				html.setAttribute('data-theme', theme);
-				btn.textContent = theme === 'dark' ? '☀️' : '🌙';
+				if (btn) {
+					btn.textContent = theme === 'dark' ? '🌞' : '🌙';
+				}
 				html.classList.add('theme-transition');
-				setTimeout(() => html.classList.remove('theme-transition'), 600);
+				setTimeout(function() {
+					html.classList.remove('theme-transition');
+				}, 600);
 			}
+			
 			const saved = localStorage.getItem('theme');
-			   if (saved) {
-				   setTheme(saved);
-			   } else {
-				   setTheme('dark');
-			   }
-			btn.addEventListener('click', () => {
-				const isDark = html.getAttribute('data-theme') === 'dark';
-				const newTheme = isDark ? 'light' : 'dark';
-				setTheme(newTheme);
-				localStorage.setItem('theme', newTheme);
-			});
+			if (saved) {
+				setTheme(saved);
+			} else {
+				setTheme('dark');
+			}
+			
+			if (btn) {
+				btn.addEventListener('click', function() {
+					const isDark = html.getAttribute('data-theme') === 'dark';
+					const newTheme = isDark ? 'light' : 'dark';
+					setTheme(newTheme);
+					localStorage.setItem('theme', newTheme);
+				});
+			}
 		})();
 		</script>
 			<style>
