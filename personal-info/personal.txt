@@ -1,0 +1,60 @@
+KAUNG SETT LWIN
+ S OFTWARE DEVELOPER
+ +66 82-748-5840 |  mr.kaungsettlwin155@gmai;.com | 
+SKILLS
+ Java, JavaScript, Python, C,
+ HTML, CSS,
+ Java EE, Spring Boot, Spring
+ Security, Hibernate, JPA, JMS,
+ APACHE CAMEL
+ Angular
+ React
+ Ionic, NodeJS
+ Oracle, 
+MSSQL, 
+Postgresql, MOngoDB 
+Git, 
+MYSQL,
+ Maven, NPM, Apache
+ WORK EXPERIENCE
+ IT Help Desk 
+Pinlon Group Hospital | 2021 - 2023
+ Camel, One Signal, Bit Bucket,
+ Scrum, Jenkins, Docker, Linux
+ Bash
+ Provide IT support by troubleshooting hardware and software issues, assisting with installations and
+ updates, and resolving network connectivity problems. Handle user-reported issues via phone, support
+ email and account management, and document technical solutions in the ticketing system. Escalate
+ complex problems when needed and guide users on security best practices. Maintain IT inventory and
+ help set up new devices for employees.
+ Junior Java Web Developer
+ DJava Factory | 2023- Present
+ Design, develop, and maintain Java Spring Boot applications while enhancing front-end interfaces
+ using JSP, JSF, and Angular. Work with MySQL, Oracle, and PostgreSQL to manage application
+ data and deploy solutions on Linux-based servers. Implement push notifications and real-time
+ updates with OneSignal and develop hybrid mobile apps using Apache Cordova. Provide 24/7
+ application support, troubleshoot technical issues, and monitor system performance to ensure
+ reliability. Collaborate with cross-functional teams to deliver high-quality software solutions for
+ West Port Malaysia clients.
+ CERTIFICATION
+ University of
+ California, Irvine
+ Advanced English
+ 2023
+ IBM 
+IOs and Android
+ Mobile Developer
+ EDUCATION
+ COURSE
+ Facebook
+ Meta Frontend  Developer
+ 2023
+ Diploma in Software Engineering
+ NCFE UK | 2023
+ AWARDS
+ BOARD Infinity
+ Java Full Stack Developer
+ 2025
+ A vocational diploma focused on job-ready subjects, including software engineering principles,
+ Java programming, GUI application development, web applications, web servers, version control,
+ and relational database management systems (RDBMS)

@@ -1,5 +1,6 @@
----
 
+---
+import '../styles/theme.css';
 ---
 
 <html lang="en">
@@ -8,9 +9,321 @@
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
+		<title>Developer Portfolio</title>
 	</head>
-	<body>
-		<h1>Astro</h1>
+		<body>
+			<button class="theme-toggle" aria-label="Toggle theme" id="theme-toggle">🌙</button>
+			<!-- Hero Section -->
+			<section id="hero" aria-label="Hero section" class="hero">
+				<div class="hero-inner">
+							   <div class="hero-photo" style="margin-top:2.5rem; width: 180px; height: 180px;">
+								   <img src="/personal-info/photos/kaungsettlwin.jpeg" alt="Kaung Sett Lwin profile photo" />
+							   </div>
+					<h1>KAUNG SETT LWIN</h1>
+					<p class="hero-tagline">Software Developer | Java Full Stack | Spring Boot | PWA | System Design</p>
+							<div class="hero-cta">
+								<a href="#projects" class="btn">View Projects</a>
+								<a href="/personal-info/Kaung%20Sett%20Lwin%20Resume.pdf" class="btn" download>Download Resume</a>
+							</div>
+				</div>
+			</section>
+
+	   <!-- About Me -->
+	   <section id="about" aria-label="About me">
+		   <div class="accent-line"></div>
+		   <h2>About Me</h2>
+		   <p>
+			   I am a passionate software developer with strong experience in Java, Spring Boot, database systems (Oracle, PostgreSQL, MySQL, MongoDB), and building modern front-end PWAs. I enjoy designing robust systems, delivering high-quality software, and collaborating with cross-functional teams. I have hands-on experience with Java EE, Spring Security, Hibernate, JMS, Apache Camel, and cloud-native deployments. I am always eager to learn and take on new challenges in software engineering.
+		   </p>
+	   </section>
+
+	   <!-- Tech Stacks -->
+	   <section id="tech-stacks" aria-label="Tech Stacks">
+		   <div class="accent-line"></div>
+		   <h2>Tech Stacks</h2>
+			   <div class="stacks-grid">
+				   <div class="stack-item"><img src="/icons/js.svg" alt="JavaScript" style="margin-bottom:0.1rem;margin-top:0.2rem;" /><span>JavaScript</span></div>
+				   <div class="stack-item"><img src="/icons/java.svg" alt="Java" style="margin-bottom:0.1rem;margin-top:0.2rem;" /><span>Java</span></div>
+			   <div class="stack-item"><img src="/icons/c.svg" alt="C" /><span>C</span></div>
+			   <div class="stack-item"><img src="/icons/python.svg" alt="Python" /><span>Python</span></div>
+			   <div class="stack-item"><img src="/icons/react.svg" alt="React" /><span>React</span></div>
+			   <div class="stack-item"><img src="/icons/angular.svg" alt="Angular" /><span>Angular</span></div>
+			   <div class="stack-item"><img src="/icons/spring.svg" alt="Spring" /><span>Spring</span></div>
+			   <div class="stack-item"><img src="/icons/struts.svg" alt="Struts" /><span>Struts</span></div>
+			   <div class="stack-item"><img src="/icons/ant.svg" alt="Ant" /><span>Ant</span></div>
+			   <div class="stack-item"><img src="/icons/maven.svg" alt="Maven" /><span>Maven</span></div>
+			   <div class="stack-item"><img src="/icons/git.svg" alt="Git" /><span>Git</span></div>
+			   <div class="stack-item"><img src="/icons/linux.svg" alt="Linux" /><span>Linux</span></div>
+			   <div class="stack-item"><img src="/icons/jenkins.svg" alt="Jenkins" /><span>Jenkins</span></div>
+			   <div class="stack-item"><img src="/icons/jira.svg" alt="Jira" /><span>Jira</span></div>
+			   <div class="stack-item"><img src="/icons/sdlc.svg" alt="SDLC" /><span>SDLC</span></div>
+			   <div class="stack-item"><img src="/icons/sql.svg" alt="SQL" /><span>SQL</span></div>
+			   <div class="stack-item"><img src="/icons/grafana.svg" alt="Grafana" /><span>Grafana</span></div>
+			   <div class="stack-item"><img src="/icons/css.svg" alt="CSS" /><span>CSS</span></div>
+			   <div class="stack-item"><img src="/icons/support.svg" alt="Level 3 Tech Support" /><span>Level 3 Tech Support</span></div>
+		   </div>
+	   </section>
+
+			<!-- Projects -->
+			<section id="projects" aria-label="Projects">
+				<div class="accent-line"></div>
+				<h2>Projects</h2>
+				<div class="projects-grid modern">
+				  <div class="project-card" tabindex="0">
+					<img src="/icons/java.svg" alt="Java" class="project-icon" />
+					<h3>FAST POS</h3>
+					<p>Cross-platform Point-of-Sale system with mobile and web support, covering core sales operations. Manages product catalog, sales, discounts, payments, and reports. Data sync between mobile and web.</p>
+					<div class="project-tech">Java, Web, Mobile</div>
+				  </div>
+				  <div class="project-card" tabindex="0">
+					<img src="/icons/struts.svg" alt="Struts" class="project-icon" />
+					<h3>WSCS (Warehouse & Staff Control System)</h3>
+					<p>HR and warehouse management software streamlining workforce and operational tasks. Schedules shifts, assigns tasks, and generates reports.</p>
+					<div class="project-tech">Java, Ant, Struts</div>
+				  </div>
+				  <div class="project-card" tabindex="0">
+					<img src="/icons/struts.svg" alt="Struts" class="project-icon" />
+					<h3>SCSS (Smart Card Security System)</h3>
+					<p>Smart card-based security system controlling access and authentication. Role-based access, event logging, and alerts.</p>
+					<div class="project-tech">Java, Ant, Struts</div>
+				  </div>
+				  <div class="project-card" tabindex="0">
+					<img src="/icons/spring.svg" alt="Spring" class="project-icon" />
+					<h3>SCSS BE (Backend for Smart Card Security System)</h3>
+					<p>Backend service powering SCSS applications for Windows and mobile. APIs for authentication, user data, and system config.</p>
+					<div class="project-tech">Java, Spring Boot</div>
+				  </div>
+				  <div class="project-card" tabindex="0">
+					<img src="/icons/angular.svg" alt="Angular" class="project-icon" />
+					<h3>CBAS (Centralized Berth Allocation System)</h3>
+					<p>Automated berth allocation for port operations. Real-time berth plans, dashboard updates, and rule-based prioritization.</p>
+					<div class="project-tech">Java, Spring, Angular, JSP, Ionic</div>
+				  </div>
+				  <div class="project-card" tabindex="0">
+					<img src="/icons/spring.svg" alt="Spring" class="project-icon" />
+					<h3>EDIC V2 & V3 (EDI Messaging Systems)</h3>
+					<p>Enterprise systems automating electronic document exchange. Reliable delivery, error handling, and business rule compliance.</p>
+					<div class="project-tech">Java, Spring, Apache Camel (AMQ)</div>
+				  </div>
+				  <div class="project-card" tabindex="0">
+					<img src="/icons/spring.svg" alt="Spring" class="project-icon" />
+					<h3>AppScheduler</h3>
+					<p>Centralized scheduler automating tasks across CBAS, SCSS, and related apps. Manages jobs, triggers, and dependencies.</p>
+					<div class="project-tech">Java, Spring Boot, Quartz Scheduler</div>
+				  </div>
+				</div>
+			</section>
+
+		   <!-- Experience / Timeline -->
+		   <section id="experience" aria-label="Experience timeline">
+			   <div class="accent-line"></div>
+			   <h2>Experience</h2>
+			   <ol style="list-style:none;padding:0;margin:0;">
+				   <li style="margin-bottom:2rem;position:relative;padding-left:2rem;">
+					   <span style="position:absolute;left:0;top:0;width:1rem;height:1rem;background:var(--color-accent);border-radius:50%;"></span>
+					   <strong>IT Help Desk</strong> <span style="color:var(--color-accent);">— Pinlon Group Hospital</span><br />
+					   <span style="font-size:0.95rem;color:#888;">2021 - 2023</span>
+					   <div>Provided IT support, troubleshooting hardware/software issues, installations, updates, and network connectivity. Managed user accounts, documented solutions, and maintained IT inventory.</div>
+				   </li>
+				   <li style="margin-bottom:2rem;position:relative;padding-left:2rem;">
+					   <span style="position:absolute;left:0;top:0;width:1rem;height:1rem;background:var(--color-accent);border-radius:50%;"></span>
+					   <strong>Junior Java Web Developer</strong> <span style="color:var(--color-accent);">— DJava Factory</span><br />
+					   <span style="font-size:0.95rem;color:#888;">2023 - Present</span>
+					   <div>Design, develop, and maintain Java Spring Boot applications. Enhanced front-end interfaces using JSP, JSF, and Angular. Managed data with MySQL, Oracle, and PostgreSQL. Deployed solutions on Linux servers, implemented push notifications, and developed hybrid mobile apps. Provided 24/7 support and collaborated with teams for West Port Malaysia clients.</div>
+				   </li>
+			   </ol>
+		   </section>
+
+		<!-- Contact -->
+		<section id="contact" aria-label="Contact">
+			<div class="accent-line"></div>
+			<h2>Contact</h2>
+					<div style="display:flex;gap:1.5rem;align-items:center;margin-bottom:1.5rem;">
+						<a href="mailto:mr.kaungsettlwin155@gmai;.com" aria-label="Email" style="font-size:1.7rem;color:var(--color-accent);"><svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="22,6 12,13 2,6"/></svg></a>
+						<a href="https://www.linkedin.com/in/kaung-sett-lwin-661376274" target="_blank" rel="noopener" aria-label="LinkedIn" style="font-size:1.7rem;color:var(--color-accent);"><svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="2.18"/><line x1="16" y1="8" x2="16" y2="16"/><line x1="12" y1="12" x2="12" y2="16"/><line x1="8" y1="8" x2="8" y2="16"/></svg></a>
+						<a href="https://github.com/kaungSethLwin" target="_blank" rel="noopener" aria-label="GitHub" style="font-size:1.7rem;color:var(--color-accent);"><svg width="1em" height="1em" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2C6.48 2 2 6.48 2 12c0 4.42 2.87 8.17 6.84 9.49.5.09.66-.22.66-.48 0-.24-.01-.87-.01-1.7-2.78.6-3.37-1.34-3.37-1.34-.45-1.15-1.1-1.46-1.1-1.46-.9-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.89 1.52 2.34 1.08 2.91.83.09-.65.35-1.08.63-1.33-2.22-.25-4.56-1.11-4.56-4.95 0-1.09.39-1.98 1.03-2.68-.1-.25-.45-1.27.1-2.65 0 0 .84-.27 2.75 1.02A9.56 9.56 0 0 1 12 6.8c.85.004 1.71.12 2.51.35 1.91-1.29 2.75-1.02 2.75-1.02.55 1.38.2 2.4.1 2.65.64.7 1.03 1.59 1.03 2.68 0 3.85-2.34 4.7-4.57 4.95.36.31.68.92.68 1.85 0 1.33-.01 2.4-.01 2.73 0 .27.16.58.67.48A10.01 10.01 0 0 0 22 12c0-5.52-4.48-10-10-10z"/></svg></a>
+					</div>
+			<form style="display:flex;flex-direction:column;gap:1rem;max-width:400px;">
+				<input type="text" name="name" placeholder="Your Name" required aria-label="Name" style="padding:0.7rem 1rem;border-radius:0.7rem;border:1px solid #ddd;font-size:1rem;" />
+				<input type="email" name="email" placeholder="Your Email" required aria-label="Email" style="padding:0.7rem 1rem;border-radius:0.7rem;border:1px solid #ddd;font-size:1rem;" />
+				<textarea name="message" placeholder="Your Message" required aria-label="Message" rows="4" style="padding:0.7rem 1rem;border-radius:0.7rem;border:1px solid #ddd;font-size:1rem;"></textarea>
+				<button type="submit" class="btn">Send Message</button>
+			</form>
+		</section>
+
+		<script>
+		// Theme toggle logic with smooth transition
+		(function() {
+			const btn = document.getElementById('theme-toggle');
+			const html = document.documentElement;
+			function setTheme(theme) {
+				html.setAttribute('data-theme', theme);
+				btn.textContent = theme === 'dark' ? '☀️' : '🌙';
+				html.classList.add('theme-transition');
+				setTimeout(() => html.classList.remove('theme-transition'), 600);
+			}
+			const saved = localStorage.getItem('theme');
+			if (saved) {
+				setTheme(saved);
+			} else {
+				const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+				setTheme(prefersDark ? 'dark' : 'light');
+			}
+			btn.addEventListener('click', () => {
+				const isDark = html.getAttribute('data-theme') === 'dark';
+				const newTheme = isDark ? 'light' : 'dark';
+				setTheme(newTheme);
+				localStorage.setItem('theme', newTheme);
+			});
+		})();
+		</script>
+			<style>
+				.theme-transition, .theme-transition body, .theme-transition section, .theme-transition .btn, .theme-transition .project-card, .theme-transition .card-front, .theme-transition .card-back {
+					transition: background 0.6s cubic-bezier(.4,0,.2,1), color 0.6s cubic-bezier(.4,0,.2,1), box-shadow 0.6s cubic-bezier(.4,0,.2,1);
+				}
+				.hero {
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					min-height: 60vh;
+					background: var(--color-bg);
+					padding-top: 4rem;
+				}
+				.hero-inner {
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+					gap: 1.5rem;
+				}
+				.hero-photo {
+					width: 140px;
+					height: 140px;
+					border-radius: 50%;
+					border: 4px solid var(--color-accent);
+					box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+					overflow: hidden;
+					background: #eee;
+				}
+				.hero-photo img {
+					width: 100%;
+					height: 100%;
+					object-fit: cover;
+					border-radius: 50%;
+				}
+				.hero h1 {
+					font-size: 2.5rem;
+					margin: 0;
+					text-align: center;
+				}
+				.hero-tagline {
+					font-size: 1.2rem;
+					text-align: center;
+					max-width: 400px;
+					color: var(--color-text);
+				}
+				.hero-cta {
+					display: flex;
+					gap: 1rem;
+				}
+				.projects-grid.modern {
+					display: grid;
+					grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+					gap: 2rem;
+				}
+				.project-card {
+					position: relative;
+					background: #fff;
+					border-radius: 1.2rem;
+					box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+					transition: box-shadow 0.4s cubic-bezier(.4,0,.2,1), transform 0.4s cubic-bezier(.4,0,.2,1);
+					cursor: pointer;
+					display: flex;
+					flex-direction: column;
+					align-items: flex-start;
+					justify-content: flex-start;
+					min-height: 200px;
+					padding: 1.5rem 1.2rem 1.2rem 1.2rem;
+					overflow: hidden;
+				}
+				.project-card:focus, .project-card:hover {
+					box-shadow: 0 8px 32px rgba(0,0,0,0.13);
+					transform: translateY(-6px) scale(1.04);
+					z-index: 2;
+				}
+				.project-card[tabindex]:focus {
+					outline: 2px solid var(--color-accent);
+				}
+				.project-icon {
+					width: 38px;
+					height: 38px;
+					margin-bottom: 0.7rem;
+					filter: drop-shadow(0 2px 6px rgba(0,0,0,0.07));
+				}
+				.project-tech {
+					margin: 0.7rem 0 0 0;
+					font-size: 0.97rem;
+					color: var(--color-accent);
+				}
+				.stacks-grid {
+					display: grid;
+					grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+					gap: 1.5rem;
+					margin: 2.5rem 0 1.5rem 0;
+					justify-items: center;
+					align-items: center;
+				}
+				.stack-item {
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+					gap: 0.5rem;
+					background: #fff;
+					border-radius: 1.2rem;
+					box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+					padding: 1.1rem 0.7rem 0.7rem 0.7rem;
+					min-width: 90px;
+					min-height: 90px;
+					transition: box-shadow 0.3s, transform 0.3s;
+				}
+				.stack-item img {
+					width: 38px;
+					height: 38px;
+					margin-bottom: 0.2rem;
+				}
+				.stack-item span {
+					font-size: 1rem;
+					color: var(--color-heading);
+					font-weight: 600;
+					text-align: center;
+				}
+				.stack-item:hover, .stack-item:focus {
+					box-shadow: 0 8px 32px rgba(0,0,0,0.13);
+					transform: translateY(-4px) scale(1.04);
+					outline: 2px solid var(--color-accent);
+				}
+				@media (max-width: 600px) {
+					.stacks-grid { gap: 0.7rem; }
+					.stack-item { min-width: 60px; min-height: 60px; padding: 0.7rem 0.3rem 0.3rem 0.3rem; }
+					.stack-item img { width: 24px; height: 24px; }
+					.stack-item span { font-size: 0.85rem; }
+				}
+				/* Fade-in animation for sections */
+				section { opacity:0; transform:translateY(30px); animation:fadeInUp 0.7s forwards; }
+				section:nth-of-type(1) { animation-delay:0.1s; }
+				section:nth-of-type(2) { animation-delay:0.3s; }
+				section:nth-of-type(3) { animation-delay:0.5s; }
+				section:nth-of-type(4) { animation-delay:0.7s; }
+				section:nth-of-type(5) { animation-delay:0.9s; }
+				@keyframes fadeInUp {
+					to { opacity:1; transform:translateY(0); }
+				}
+				@media (max-width: 600px) {
+					.hero h1 { font-size: 1.5rem; }
+					.hero-photo { width: 90px; height: 90px; }
+					.projects-grid.modern { gap: 1rem; }
+					.project-card { min-height: 120px; padding: 1rem 0.7rem 0.7rem 0.7rem; }
+					.project-icon { width: 28px; height: 28px; }
+				}
+			</style>
 	</body>
 </html>
