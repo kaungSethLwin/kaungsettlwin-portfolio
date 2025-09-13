@@ -69,10 +69,16 @@ section {
   transition: background var(--transition), color var(--transition), transform var(--transition);
 }
 
+
 .btn:hover, .btn:focus {
   background: var(--color-black);
-  color: var(--color-gold);
+  color: var(--color-accent);
   transform: translateY(-2px) scale(1.03);
+}
+
+.btn:active {
+  background: var(--color-btn-bg);
+  color: var(--color-btn-text);
 }
 
 .theme-toggle {
